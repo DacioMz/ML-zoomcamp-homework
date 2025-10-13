@@ -17,7 +17,7 @@ import numpy as np
 url = "https://raw.githubusercontent.com/alexeygrigorev/datasets/master/course_lead_scoring.csv"
 filename = "course_lead_scoring.csv"
 
- Descargamos el archivo solo si no existe
+#Descargamos el archivo solo si no existe
 if not os.path.exists(filename):
     print("Descargando dataset...")
     r = requests.get(url)
@@ -59,7 +59,6 @@ corr_pairs = corr_matrix.unstack().sort_values(ascending=False)
 corr_pairs = corr_pairs[corr_pairs < 1]
 corr_pairs.head()
 
-number_of_courses_viewed  and  interaction_count
 
 #Question 3
 
